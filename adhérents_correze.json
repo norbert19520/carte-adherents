@@ -1,0 +1,584 @@
+{
+  "points": [
+    {
+      "id": 1,
+      "nom": "ALBUSSAC",
+      "ville": "ALBUSSAC",
+      "Adresse": "",
+      "Adhérents": 3,
+      "lat": 45.1395791,
+      "lng": 1.8354681,
+      "description": ""
+    },
+    {
+      "id": 2,
+      "nom": "ALLASSAC",
+      "ville": "ALLASSSAC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2593,
+      "lng": 1.4757,
+      "description": ""
+    },
+    {
+      "id": 3,
+      "nom": "ARGENTAT SUR DORDOGNE",
+      "ville": "ARGENTAT SUR DORDOGNE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.1165803,
+      "lng": 1.9404253,
+      "description": ""
+    },
+    {
+      "id": 4,
+      "nom": "ARNAC POMPADOUR",
+      "ville": "ARNAC POMPADOUR",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.399475,
+      "lng": 1.38217,
+      "description": ""
+    },
+    {
+      "id": 5,
+      "nom": "BEAULIEU SUR DORDOGNE",
+      "ville": "BEAULIEU SUR DORDOGNE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 44.9782193,
+      "lng": 1.8377313,
+      "description": ""
+    },
+    {
+      "id": 6,
+      "nom": "BRIVE LA GAILLARDE",
+      "ville": "BRIVE LA GAILLARDE",
+      "Adresse": "",
+      "Adhérents": 16,
+      "lat": 45.1584982,
+      "lng": 1.5332389,
+      "description": ""
+    },
+    {
+      "id": 7,
+      "nom": "BEYNAT",
+      "ville": "BEYNAT",
+      "Adresse": "",
+      "Adhérents": 3,
+      "lat": 45.124713,
+      "lng": 1.7218235,
+      "description": ""
+    },
+    {
+      "id": 8,
+      "nom": "CARS",
+      "ville": "CARS",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.215731,
+      "lng": 1.59956,
+      "description": ""
+    },
+    {
+      "id": 9,
+      "nom": "CHAMBOULIVE",
+      "ville": "CHAMBOULIVE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.432078,
+      "lng": 1.70436,
+      "description": ""
+    },
+    {
+      "id": 10,
+      "nom": "CHAMEYRAT",
+      "ville": "CHAMEYRAT",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2335546,
+      "lng": 1.6974158,
+      "description": ""
+    },
+    {
+      "id": 11,
+      "nom": "CHAMPAGNAC LA NOAILLE",
+      "ville": "CHAMPAGNAC LA NOAILLE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.3073963,
+      "lng": 2.0168176,
+      "description": ""
+    },
+    {
+      "id": 12,
+      "nom": "COSNAC",
+      "ville": "COSNAC",
+      "Adresse": "",
+      "Adhérents": 2,
+      "lat": 45.131,
+      "lng": 1.58763,
+      "description": ""
+    },
+    {
+      "id": 13,
+      "nom": "CRESSENSAC SARRAZAC",
+      "ville": "CRESSENSAC SARRAZAC",
+      "Adresse": "",
+      "Adhérents": 2,
+      "lat": 45.020577,
+      "lng": 1.519831,
+      "description": ""
+    },
+    {
+      "id": 14,
+      "nom": "CUBLAC",
+      "ville": "CUBLAC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.1442316,
+      "lng": 1.3056983,
+      "description": ""
+    },
+    {
+      "id": 15,
+      "nom": "EGLETONS",
+      "ville": "EGLETONS",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.4065225,
+      "lng": 2.045018,
+      "description": ""
+    },
+    {
+      "id": 16,
+      "nom": "HAUTEFAGE",
+      "ville": "HAUTEFAGE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.0816106,
+      "lng": 2.001341,
+      "description": ""
+    },
+    {
+      "id": 17,
+      "nom": "JUGEALS NAZARETH",
+      "ville": "JUGEALS NAZARETH",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.0812305,
+      "lng": 1.5585602,
+      "description": ""
+    },
+    {
+      "id": 18,
+      "nom": "JUILLAC",
+      "ville": "JUILLAC",
+      "Adresse": "",
+      "Adhérents": 0,
+      "lat": 45.317344,
+      "lng": 1.321478,
+      "description": ""
+    },
+    {
+      "id": 19,
+      "nom": "LA FEUILLADE",
+      "ville": "LA FEUILLADE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.115468,
+      "lng": 1.4002557,
+      "description": ""
+    },
+    {
+      "id": 20,
+      "nom": "LA ROCHE CANILLAC",
+      "ville": "LA ROCHE CANILLAC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.1956234,
+      "lng": 1.9693752,
+      "description": ""
+    },
+    {
+      "id": 21,
+      "nom": "LAGARDE MARC LA TOUR",
+      "ville": "LAGARDE MARC LA TOUR",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.1904806,
+      "lng": 1.8340754,
+      "description": ""
+    },
+    {
+      "id": 22,
+      "nom": "LAGLEYGEOLLE",
+      "ville": "LAGLEYGEOLLE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.083337,
+      "lng": 1.692472,
+      "description": ""
+    },
+    {
+      "id": 23,
+      "nom": "LAGUENNE SUR AVALOUZE",
+      "ville": "LAGUENNE SUR AVALOUZE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2475656,
+      "lng": 1.790103,
+      "description": ""
+    },
+    {
+      "id": 24,
+      "nom": "LE CHASTANG",
+      "ville": "LE CHASTANG",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.1723833,
+      "lng": 1.7342495,
+      "description": ""
+    },
+    {
+      "id": 25,
+      "nom": "LES TROIS SAINTS",
+      "ville": "LES TROIS SAINTS",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.440435,
+      "lng": 1.522122,
+      "description": ""
+    },
+    {
+      "id": 26,
+      "nom": "LIGINIAC",
+      "ville": "LIGINIAC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.4144112,
+      "lng": 2.3333005,
+      "description": ""
+    },
+    {
+      "id": 27,
+      "nom": "LIMOGES",
+      "ville": "LIMOGES",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.8354243,
+      "lng": 1.2644847,
+      "description": ""
+    },
+    {
+      "id": 28,
+      "nom": "LUBERSAC",
+      "ville": "LUBERSAC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.4456945,
+      "lng": 1.4040072,
+      "description": ""
+    },
+    {
+      "id": 29,
+      "nom": "MALEMORT",
+      "ville": "MALEMORT",
+      "Adresse": "",
+      "Adhérents": 4,
+      "lat": 45.1796756,
+      "lng": 1.5894803,
+      "description": ""
+    },
+    {
+      "id": 30,
+      "nom": "MANSAC",
+      "ville": "MANSAC",
+      "Adresse": "",
+      "Adhérents": 2,
+      "lat": 45.1682435,
+      "lng": 1.3826406,
+      "description": ""
+    },
+    {
+      "id": 31,
+      "nom": "NADAILLAC",
+      "ville": "NADAILLAC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.03872,
+      "lng": 1.39725,
+      "description": ""
+    },
+    {
+      "id": 32,
+      "nom": "NAVES",
+      "ville": "NAVES",
+      "Adresse": "",
+      "Adhérents": 2,
+      "lat": 45.312319,
+      "lng": 1.7666474,
+      "description": ""
+    },
+    {
+      "id": 33,
+      "nom": "NOAILLES",
+      "ville": "NOAILLES",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.1014092,
+      "lng": 1.5236825,
+      "description": ""
+    },
+    {
+      "id": 34,
+      "nom": "OBJAT",
+      "ville": "OBJAT",
+      "Adresse": "",
+      "Adhérents": 2,
+      "lat": 45.2628546,
+      "lng": 1.4097899,
+      "description": ""
+    },
+    {
+      "id": 35,
+      "nom": "PANDRIGNES",
+      "ville": "PANDRIGNES",
+      "Adresse": "",
+      "Adhérents": 2,
+      "lat": 45.2281323,
+      "lng": 1.8547415,
+      "description": ""
+    },
+    {
+      "id": 36,
+      "nom": "PARIS",
+      "ville": "PARIS",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 48.859018,
+      "lng": 2.347032,
+      "description": ""
+    },
+    {
+      "id": 37,
+      "nom": "SADROC",
+      "ville": "SADROC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2828668,
+      "lng": 1.5492086,
+      "description": ""
+    },
+    {
+      "id": 38,
+      "nom": "SALON LA TOUR",
+      "ville": "SALON LA TOUR",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.5044021,
+      "lng": 1.5389744,
+      "description": ""
+    },
+    {
+      "id": 39,
+      "nom": "SARRAN",
+      "ville": "SARRAN",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.4097306,
+      "lng": 1.9382743,
+      "description": ""
+    },
+    {
+      "id": 40,
+      "nom": "SEGONZAC",
+      "ville": "SEGONZAC",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.278494,
+      "lng": 1.267858,
+      "description": ""
+    },
+    {
+      "id": 41,
+      "nom": "SEILHAC",
+      "ville": "SEILHAC",
+      "Adresse": "",
+      "Adhérents": 3,
+      "lat": 45.3663548,
+      "lng": 1.7144158,
+      "description": ""
+    },
+    {
+      "id": 42,
+      "nom": "ST CLEMENT",
+      "ville": "ST CLEMENT",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.339547,
+      "lng": 1.682669,
+      "description": ""
+    },
+    {
+      "id": 43,
+      "nom": "ST GEORGES",
+      "ville": "ST GEORGES",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.9731105,
+      "lng": 0.2708349,
+      "description": ""
+    },
+    {
+      "id": 44,
+      "nom": "ST HILAIRE PEYROUX",
+      "ville": "ST HILAIRE PEYROUX",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2135945,
+      "lng": 1.6485671,
+      "description": ""
+    },
+    {
+      "id": 45,
+      "nom": "ST MARTIAL DE GIMEL",
+      "ville": "ST MARTIAL DE GIMEL",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2665204,
+      "lng": 1.8718724,
+      "description": ""
+    },
+    {
+      "id": 46,
+      "nom": "ST MAURICE LES BROUSSES",
+      "ville": "ST MAURICE LES BROUSSES",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.6985284,
+      "lng": 1.2361207,
+      "description": ""
+    },
+    {
+      "id": 47,
+      "nom": "ST PANTALEON DE LARCHE",
+      "ville": "ST PANTALEON DE LARCHE",
+      "Adresse": "",
+      "Adhérents": 3,
+      "lat": 45.1406943,
+      "lng": 1.446519,
+      "description": ""
+    },
+    {
+      "id": 48,
+      "nom": "ST PARDOUX CORBIER",
+      "ville": "ST PARDOUX CORBIER",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.449526,
+      "lng": 1.457923,
+      "description": ""
+    },
+    {
+      "id": 49,
+      "nom": "ST SOLVE",
+      "ville": "ST SOLVE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.3097839,
+      "lng": 1.4003585,
+      "description": ""
+    },
+    {
+      "id": 50,
+      "nom": "ST SYLVAIN",
+      "ville": "ST SYLVAIN",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.1758539,
+      "lng": 1.875582,
+      "description": ""
+    },
+    {
+      "id": 51,
+      "nom": "ST VIANCE",
+      "ville": "ST VIANCE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2176122,
+      "lng": 1.4521769,
+      "description": ""
+    },
+    {
+      "id": 52,
+      "nom": "STE FEREOLE",
+      "ville": "STE FEREOLE",
+      "Adresse": "",
+      "Adhérents": 2,
+      "lat": 45.2583188,
+      "lng": 1.5854783,
+      "description": ""
+    },
+    {
+      "id": 53,
+      "nom": "STE FORTUNADE",
+      "ville": "STE FORTUNADE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.2072935,
+      "lng": 1.7719357,
+      "description": ""
+    },
+    {
+      "id": 54,
+      "nom": "TULLE",
+      "ville": "TULLE",
+      "Adresse": "",
+      "Adhérents": 10,
+      "lat": 45.2678347,
+      "lng": 1.7706797,
+      "description": ""
+    },
+    {
+      "id": 55,
+      "nom": "USSAC",
+      "ville": "USSAC",
+      "Adresse": "",
+      "Adhérents": 4,
+      "lat": 45.1923827,
+      "lng": 1.5087884,
+      "description": ""
+    },
+    {
+      "id": 56,
+      "nom": "UZERCHE",
+      "ville": "UZERCHE",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.4243023,
+      "lng": 1.5636393,
+      "description": ""
+    },
+    {
+      "id": 57,
+      "nom": "VARETZ",
+      "ville": "VARETZ",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.194706,
+      "lng": 1.4474943,
+      "description": ""
+    },
+    {
+      "id": 58,
+      "nom": "VIGNOLS",
+      "ville": "VIGNOLS",
+      "Adresse": "",
+      "Adhérents": 1,
+      "lat": 45.3193629,
+      "lng": 1.3892897,
+      "description": ""
+    }
+  ]
+}
