@@ -549,7 +549,8 @@ var seniorsCorreze = 88116; // 60 ans et plus
             carte = L.map('carte-correze').setView(centreCorreze, zoomDepartementCorreze);
             changerCarte('chaud');
 // Charger la liste des adhérents depuis GitHub
-fetch("https://raw.githubusercontent.com/norbert19520/carte-adherents/main/adh%C3%A9rents_correze.json")
+fetch("https://raw.githubusercontent.com/norbert19520/carte-adherents/main/adhérents_correze.json")
+
     .then(response => response.json())
     .then(adherents => {
         console.log("Adhérents chargés :", adherents);
