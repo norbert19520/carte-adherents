@@ -14,9 +14,9 @@
             color: #2E8B57;
             text-align: center;
             font-family: Arial, sans-serif;
-            font-size: 1.2em;
         }
         
+        /* FORMULAIRE STYLE EHPAD */
         .formulaire-ajout {
             background: #f9f9f9;
             padding: 10px;
@@ -26,35 +26,32 @@
         }
         .formulaire-ajout input, .formulaire-ajout textarea {
             width: 100%;
-            padding: 8px;
+            padding: 5px;
             margin: 5px 0;
             border: 1px solid #ccc;
             border-radius: 3px;
-            font-size: 14px;
-            box-sizing: border-box;
         }
         .formulaire-ajout label {
             font-weight: bold;
             color: #2E8B57;
-            font-size: 13px;
         }
         
+        /* BOUTONS ACTION */
         .action-buttons {
             display: flex;
-            gap: 8px;
+            gap: 10px;
             margin-top: 10px;
             flex-wrap: wrap;
         }
         button {
-            margin: 3px 0;
-            padding: 10px 12px;
+            margin: 3px;
+            padding: 8px 15px;
             cursor: pointer;
             border: none;
             border-radius: 4px;
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            gap: 6px;
-            font-size: 12px;
+            gap: 8px;
         }
         .btn-ajouter { background: #2E8B57; color: white; }
         .btn-exporter { background: #2196F3; color: white; }
@@ -64,100 +61,114 @@
         .btn-excel { background: #217346 !important; color: white !important; }
         .btn-debug { background: #FF5722 !important; color: white !important; }
         
+        /* PANEL DE PERSONNALISATION */
         .config-panel {
             background: #f5f5f5;
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
-            margin: 10px 0;
+            margin: 15px 0;
             border-left: 4px solid #2E8B57;
         }
         .config-section {
-            margin: 10px 0;
-            padding: 8px;
+            margin: 15px 0;
+            padding: 10px;
             background: white;
             border-radius: 5px;
         }
         .color-preview {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
             display: inline-block;
             border: 1px solid #ccc;
             vertical-align: middle;
-            margin: 0 5px;
+            margin: 0 10px;
         }
-        input[type="range"] { width: 120px; }
+        input[type="range"] { width: 150px; }
         .config-button {
             background: #FF9800;
             color: white;
             border: none;
-            padding: 8px 12px;
+            padding: 8px 15px;
             cursor: pointer;
             margin: 5px;
             border-radius: 4px;
         }
         
+        /* LEGENDE ET CONTROLES */
         .legende {
             background: #f9f9f9;
-            padding: 8px;
-            margin: 8px 0;
+            padding: 10px;
+            margin: 10px 0;
             border-left: 4px solid #2E8B57;
-            font-size: 12px;
         }
         .controls {
             background: white;
-            padding: 8px;
-            margin: 10px 0;
+            padding: 10px;
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            z-index: 1000;
             border-radius: 5px;
-            box-shadow: 0 0 5px #ccc;
-            position: relative;
-            top: 0;
-            right: 0;
-            width: auto;
+            box-shadow: 0 0 10px #ccc;
+            width: 200px;
         }
-        
+		
+      	/*   style du bloc contenant les boutons de zoom personnalisés.*/
         .zoom-controls {
             text-align: center;
             margin: 10px 0;
-            padding: 8px;
+            padding: 10px;
             background: #f0f8ff;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
         }
         
-        .inline-row {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin: 5px 0;
-        }
-        
-        .config-buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 8px;
-            flex-wrap: wrap;
-        }
-        
-        #importFile { display: none; }
-        
-        .stats-container {
-            background: #e8f4f8;
-            padding: 8px;
-            margin: 8px 0;
+		.zoom-section {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 10px;
+	    }
+		
+        /* INFO PANEL */
+        .info-panel {
+            background: white;
+            padding: 10px;
             border-radius: 5px;
-            font-size: 11px;
+            border: 2px solid #2E8B57;
+            font-size: 12px;
+            max-width: 240px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .info-title {
+            color: #2E8B57;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+        .info-cfdt-title {
+            color: #FF9800;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 13px;
         }
         
-        /* Tooltip personnalisé pour les libellés */
+        /* LIEN CONVERTISSEUR */
+        .convertisseur-link {
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
         .leaflet-tooltip {
             background: transparent !important;
             box-shadow: none !important;
             border: none !important;
         }
+        /* SUPPRIME LA FLÈCHE DU TOOLTIP */
         .leaflet-tooltip-top:before,
         .leaflet-tooltip-bottom:before,
         .leaflet-tooltip-left:before,
@@ -165,18 +176,105 @@
             border: none !important;
         }
         
-        @media (max-width: 600px) {
-            .action-buttons button {
-                flex: 1;
-                justify-content: center;
+		/* MODE COMPACT VERTICAL */
+		.config-panel {
+		    padding: 4px 8px;
+		    font-size: 0.8em;
+		    line-height: 1.1;
+		}
+		
+		.config-panel h3 {
+		    margin: 2px 0 6px 0;
+		    font-size: 1em;
+		}
+
+		.config-section {
+		    margin-bottom: 4px;
+		    padding-bottom: 3px;
+		    border-bottom: 1px solid #ccc;
+		}
+
+		.config-section h4 {
+		    margin: 2px 0 4px 0;
+		    font-size: 0.9em;
+		}
+
+		.config-section div {
+		    margin-bottom: 1px;
+		}
+
+		.config-section label {
+		    display: inline-block;
+		    width: 95px;
+		}
+		
+		.config-section input[type="color"],
+		.config-section input[type="text"],
+		.config-section select {
+		    transform: scale(0.8);
+		    margin-left: -6px;
+		}
+
+		.config-section input[type="range"] {
+		    width: 90px;
+		    transform: scale(0.9);
+		}
+
+		.config-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+            flex-wrap: wrap;
+        }
+		
+		.config-button {
+            padding: 6px 10px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+		
+		.inline-row {
+		    display: flex;
+		    align-items: center;
+		    gap: 6px;
+		    flex-wrap: wrap;
+		}
+		
+		.inline-row > * {
+		    display: flex;
+		    align-items: center;
+		}
+		
+		.config-section div.inline-row {
+		    display: flex !important;
+		}
+
+		.inline-row label {
+		    width: auto !important;
+		    margin-right: 4px;
+		}
+
+		.inline-row input[type="text"] {
+		    width: 60px;
+		    transform: scale(0.9);
+		}	
+				
+        /* INPUT FILE CACHE */
+        #importFile { display: none; }
+        
+        @media (max-width: 768px) {
+            .controls {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: auto;
+                margin: 10px 0;
             }
             .zoom-controls button {
-                padding: 6px 10px;
-                font-size: 11px;
-            }
-            .config-section .inline-row {
-                flex-direction: column;
-                align-items: flex-start;
+                padding: 8px 12px;
+                font-size: 12px;
             }
         }
     </style>
@@ -193,48 +291,66 @@
         <strong>Préfecture :</strong> Tulle | <strong>Sous-préfectures :</strong> Brive-la-Gaillarde, Ussel
     </div>
     
-    <!-- CARTE -->
-    <div id="carte-correze"></div>
-    
-    <!-- CONTROLES DE ZOOM -->
-    <div class="zoom-controls">
-        <strong><i class="fas fa-crosshairs"></i> Zoom rapide :</strong>
-        <button onclick="zoomVille('Tulle')"><i class="fas fa-city"></i> Tulle</button>
-        <button onclick="zoomVille('Brive')"><i class="fas fa-city"></i> Brive</button>
-        <button onclick="zoomVille('Ussel')"><i class="fas fa-city"></i> Ussel</button>
-        <button onclick="zoomDepartement()"><i class="fas fa-globe-europe"></i> Département</button>
-        <button onclick="carte.zoomIn()"><i class="fas fa-search-plus"></i> +</button>
-        <button onclick="carte.zoomOut()"><i class="fas fa-search-minus"></i> -</button>
-    </div>
-    
-    <!-- STATISTIQUES -->
-    <div class="stats-container">
-        <strong><i class="fas fa-chart-bar"></i> Statistiques :</strong>
-        <span id="stats">Chargement...</span>
-    </div>
-    
-    <!-- CONTROLES FOND DE CARTE -->
-    <div class="controls">
-        <strong><i class="fas fa-palette"></i> Fond de carte :</strong>
-        <button onclick="changerCarte('chaud')"><i class="fas fa-map"></i> Coloré</button>
-        <button onclick="changerCarte('osm')"><i class="fas fa-road"></i> Standard</button>
-        <button onclick="changerCarte('topo')"><i class="fas fa-mountain"></i> Topographique</button>
-        <button onclick="changerCarte('noir')"><i class="fas fa-moon"></i> Nuit</button>
-        <button onclick="changerCarte('satellite')"><i class="fas fa-satellite"></i> Satellite</button>
-        <button onclick="changerCarte('cyclisme')"><i class="fas fa-bicycle"></i> Cyclisme</button>
+    <!-- PANEL DE PERSONNALISATION -->
+    <div class="config-panel">
+        <h3 style="color: #2E8B57;"><i class="fas fa-palette"></i> Personnalisation des Marqueurs CFDT</h3>
         
-        <hr style="margin: 8px 0;">
+        <div class="config-section">
+            <h4><i class="fas fa-map-marker-alt"></i> Icône CFDT</h4>
+            <div>
+                <label>Couleur de fond :</label>
+                <input type="color" id="iconColor" value="#FF9800">
+                <div class="color-preview" id="iconPreview" style="background: #FF9800;"></div>
+            </div>
+            <div>
+                <label>Taille icône :</label>
+                <input type="range" id="iconSize" min="20" max="60" value="24">
+                <span id="iconSizeValue">24px</span>
+            </div>
+			
+            <div class="inline-row">
+                <label>Couleur texte :</label>
+                <input type="color" id="textColor" value="#FFFFFF">
+                <div class="color-preview" id="textPreview" style="background: #FFFFFF;"></div>
+                <label>Texte icône :</label>
+                <input type="text" id="iconText" value="CFDT" maxlength="10">
+            </div>
+        </div>
         
-        <strong><i class="fas fa-search"></i> Rechercher :</strong><br>
-        <input type="text" id="recherche" placeholder="Nom ou ville..." style="width: 100%; padding: 6px; margin: 5px 0; box-sizing: border-box;">
-        <button onclick="rechercherPoint()" style="width: 100%;"><i class="fas fa-search"></i> Chercher</button>
+        <div class="config-section">
+            <h4><i class="fas fa-font"></i> Libellés permanents</h4>
+            <div class="inline-row">
+                <label>Couleur texte :</label>
+                <input type="color" id="labelColor" value="#FF9800">
+                <div class="color-preview" id="labelPreview" style="background: #FF9800;"></div>
+                <label>Fond :</label>
+                <input type="color" id="labelBgColor" value="#FFFFFF">
+                <div class="color-preview" id="labelBgPreview" style="background: #FFFFFF;"></div>
+            </div>
+			
+            <div>
+                <label>Taille police :</label>
+                <input type="range" id="labelSize" min="8" max="20" value="12">
+                <span id="labelSizeValue">12px</span>
+            </div>
+			
+             <div class="inline-row">
+                <label>Compact :</label>
+                <input type="checkbox" id="labelCompact" checked>
+                <label>Bordure :</label>
+                <select id="labelBorder">
+                    <option value="none">Aucune</option>
+                    <option value="thin" selected>Fine</option>
+                    <option value="medium">Moyenne</option>
+                </select>
+            </div>
+        </div>
         
-        <hr style="margin: 8px 0;">
-        
-        <div style="font-size: 12px;">
-            <strong><i class="fas fa-database"></i> Données :</strong><br>
-            <span id="compteur-points">0</span> points chargés<br>
-            <button onclick="reinitialiserDonnees()" style="background: #ff9800; font-size: 11px; padding: 4px 8px; margin-top: 5px;">
+        <div class="config-buttons">
+            <button class="config-button" onclick="appliquerPersonnalisation()">
+                <i class="fas fa-save"></i> Appliquer les changements
+            </button>
+            <button class="config-button" onclick="resetPersonnalisation()" style="background: #4CAF50;">
                 <i class="fas fa-redo"></i> Réinitialiser
             </button>
         </div>
@@ -243,10 +359,10 @@
     <!-- FORMULAIRE D'AJOUT/MODIFICATION -->
     <div class="formulaire-ajout">
         <h3 style="color: #2E8B57; margin-top: 0;">
-            <i class="fas fa-plus-circle"></i> Ajouter/Modifier un point
+            <i class="fas fa-plus-circle"></i> Ajouter/Modifier un point adhérents
         </h3>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
             <div>
                 <label for="nomEHPAD">Nom/Ville *</label>
                 <input type="text" id="nomEHPAD" placeholder="Ex: Section CFDT Brive">
@@ -257,7 +373,7 @@
             </div>
             <div>
                 <label for="adresseEHPAD">Adresse complète</label>
-                <input type="text" id="adresseEHPAD" placeholder="Ex: 10 Rue des Tilleuls">
+                <input type="text" id="adresseEHPAD" placeholder="Ex: 10 Rue des Tilleuls, 19000 Tulle">
             </div>
             <div>
                 <label for="adherentsEHPAD">Nombre d'adhérents *</label>
@@ -277,216 +393,299 @@
             <label for="descEHPAD">Description (optionnel)</label>
             <textarea id="descEHPAD" placeholder="Informations complémentaires..." rows="2"></textarea>
         </div>
+		
+		<div class="form-group">
+			<label>Code postal :</label>
+			<input type="text" id="cpEHPAD">
+		</div>
         
+        <!-- BOUTONS D'ACTION -->
         <div class="action-buttons">
             <button class="btn-ajouter" id="btn-ajouter" onclick="ajouterPoint()">
-                <i class="fas fa-plus"></i> Ajouter
+                <i class="fas fa-plus"></i> Ajouter un nouveau point
             </button>
             <button class="btn-ajouter" onclick="mettreAJourPoint()" style="display:none;" id="btn-update">
-                <i class="fas fa-save"></i> Mettre à jour
+                <i class="fas fa-save"></i> Mettre à jour ce point
             </button>
             <button class="btn-supprimer" onclick="annulerEdition()" style="display:none;" id="btn-cancel">
-                <i class="fas fa-times"></i> Annuler
+                <i class="fas fa-times"></i> Annuler l'édition
             </button>
             <button class="btn-exporter" onclick="exporterDonnees()">
-                <i class="fas fa-download"></i> JSON
+                <i class="fas fa-download"></i> Exporter JSON
             </button>
             <button class="btn-importer" onclick="importerDonnees()">
-                <i class="fas fa-upload"></i> Importer
+                <i class="fas fa-upload"></i> Importer JSON
             </button>
             <button class="btn-excel" onclick="convertirEnCSVExcel()">
-                <i class="fas fa-file-excel"></i> CSV
+                <i class="fas fa-file-excel"></i> CSV pour Excel
+            </button>
+            <button class="btn-debug" onclick="debugExportCSV()">
+                <i class="fas fa-bug"></i> Debug CSV
             </button>
         </div>
         
-        <p style="font-size: 11px; color: #666; margin-top: 8px;">
-            <i class="fas fa-info-circle"></i> Cliquez sur la carte pour obtenir les coordonnées
+        <p style="font-size: 12px; color: #666; margin-top: 10px;">
+            <i class="fas fa-info-circle"></i> Cliquez sur la carte pour définir les coordonnées automatiquement
         </p>
+        
+        <!-- LIEN VERS LE CONVERTISSEUR -->
+        <div class="convertisseur-link">
+            <a href="convertisseur universel.html" target="_blank" style="color: #FF9800; text-decoration: none; font-weight: bold;">
+                <i class="fas fa-exchange-alt"></i> Outil de conversion CSV ↔ JSON
+            </a>
+            <p style="font-size: 11px; color: #666; margin-top: 5px;">
+                Pour convertir vos fichiers Excel en JSON et vice-versa
+            </p>
+        </div>
     </div>
     
-    <!-- PANEL DE PERSONNALISATION -->
-    <div class="config-panel">
-        <h3 style="color: #2E8B57; margin:0 0 8px 0;"><i class="fas fa-palette"></i> Personnalisation des Marqueurs CFDT</h3>
+    <!-- CONTROLES STATISTIQUES -->
+    <div style="background: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 5px;">
+        <strong><i class="fas fa-chart-bar"></i> Statistiques :</strong>
+        <span id="stats">Chargement...</span>
+    </div>
+    
+    <!-- CARTE -->
+    <div id="carte-correze"></div>
+    
+    <!-- CONTROLES POUR CHANGER DE FOND DE CARTE -->
+    <div class="controls">
+        <strong><i class="fas fa-palette"></i> Fond de carte :</strong><br>
+        <button onclick="changerCarte('chaud')"><i class="fas fa-map"></i> Coloré</button>
+        <button onclick="changerCarte('osm')"><i class="fas fa-road"></i> Standard</button>
+        <button onclick="changerCarte('topo')"><i class="fas fa-mountain"></i> Topographique</button>
+        <button onclick="changerCarte('noir')"><i class="fas fa-moon"></i> Nuit</button>
+        <button onclick="changerCarte('satellite')"><i class="fas fa-satellite"></i> Satellite</button>
+        <button onclick="changerCarte('cyclisme')"><i class="fas fa-bicycle"></i> Cyclisme</button>
         
-        <div class="config-section">
-            <h4><i class="fas fa-map-marker-alt"></i> Icône CFDT</h4>
-            <div class="inline-row">
-                <label>Couleur de fond :</label>
-                <input type="color" id="iconColor" value="#FF9800">
-                <div class="color-preview" id="iconPreview" style="background: #FF9800;"></div>
-            </div>
-            <div class="inline-row">
-                <label>Taille icône :</label>
-                <input type="range" id="iconSize" min="20" max="45" value="24">
-                <span id="iconSizeValue">24px</span>
-            </div>
-            <div class="inline-row">
-                <label>Couleur texte :</label>
-                <input type="color" id="textColor" value="#FFFFFF">
-                <div class="color-preview" id="textPreview" style="background: #FFFFFF;"></div>
-            </div>
-            <div class="inline-row">
-                <label>Texte icône :</label>
-                <input type="text" id="iconText" value="CFDT" maxlength="10" style="width:80px;">
-            </div>
-        </div>
+        <hr style="margin: 10px 0;">
         
-        <div class="config-section">
-            <h4><i class="fas fa-font"></i> Libellés permanents</h4>
-            <div class="inline-row">
-                <label>Couleur texte :</label>
-                <input type="color" id="labelColor" value="#FF9800">
-                <div class="color-preview" id="labelPreview" style="background: #FF9800;"></div>
-            </div>
-            <div class="inline-row">
-                <label>Fond :</label>
-                <input type="color" id="labelBgColor" value="#FFFFFF">
-                <div class="color-preview" id="labelBgPreview" style="background: #FFFFFF;"></div>
-            </div>
-            <div class="inline-row">
-                <label>Taille police :</label>
-                <input type="range" id="labelSize" min="8" max="16" value="11">
-                <span id="labelSizeValue">11px</span>
-            </div>
-            <div class="inline-row">
-                <label>Compact :</label>
-                <input type="checkbox" id="labelCompact" checked>
-                <label style="margin-left:10px;">Bordure :</label>
-                <select id="labelBorder">
-                    <option value="none">Aucune</option>
-                    <option value="thin" selected>Fine</option>
-                    <option value="medium">Moyenne</option>
-                </select>
-            </div>
-        </div>
+        <strong><i class="fas fa-search"></i> Rechercher :</strong><br>
+        <input type="text" id="recherche" placeholder="Nom ou ville..." style="width: 100%; padding: 5px; margin: 5px 0;">
+        <button onclick="rechercherPoint()"><i class="fas fa-search"></i> Chercher</button>
         
-        <div class="config-buttons">
-            <button class="config-button" onclick="appliquerPersonnalisation()">
-                <i class="fas fa-save"></i> Appliquer
-            </button>
-            <button class="config-button" onclick="resetPersonnalisation()" style="background: #4CAF50;">
+        <hr style="margin: 10px 0;">
+        
+        <div style="font-size: 12px;">
+            <strong><i class="fas fa-database"></i> Données :</strong><br>
+            <span id="compteur-points">0</span> points chargés<br>
+            <button onclick="reinitialiserDonnees()" style="background: #ff9800; font-size: 11px; padding: 4px 8px; margin-top: 5px;">
                 <i class="fas fa-redo"></i> Réinitialiser
             </button>
         </div>
     </div>
+    
+    <!-- CONTROLES DE ZOOM -->
+    <div class="zoom-controls">
+        <strong><i class="fas fa-crosshairs"></i> Zoom rapide :</strong>
+        <button onclick="zoomVille('Tulle')"><i class="fas fa-city"></i> Tulle</button>
+        <button onclick="zoomVille('Brive')"><i class="fas fa-city"></i> Brive</button>
+        <button onclick="zoomVille('Ussel')"><i class="fas fa-city"></i> Ussel</button>
+        <button onclick="zoomDepartement()"><i class="fas fa-globe-europe"></i> Département</button>
+        <button onclick="carte.zoomIn()"><i class="fas fa-search-plus"></i> +</button>
+        <button onclick="carte.zoomOut()"><i class="fas fa-search-minus"></i> -</button>
+    </div>
 
+    <!-- INPUT POUR IMPORT (CACHÉ) -->
     <input type="file" id="importFile" accept=".json">
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         // =============================================
-        // DONNÉES DES ADHÉRENTS
+        // CONFIGURATION DE PERSONNALISATION
         // =============================================
-        var pointsAdherents = [
-            {id: 1, nom: "ALBUSSAC", ville: "ALBUSSAC", adherents: 3, lat: 45.1395791, lng: 1.8356481, adresse: "", description: ""},
-            {id: 2, nom: "ALLASSAC", ville: "ALLASSAC", adherents: 1, lat: 45.2593, lng: 1.4757, adresse: "", description: ""},
-            {id: 3, nom: "ARGENTAT", ville: "ARGENTAT SUR DORDOGNE", adherents: 3, lat: 45.1165803, lng: 1.9404253, adresse: "", description: ""},
-            {id: 4, nom: "ARNAC POMPADOUR", ville: "ARNAC POMPADOUR", adherents: 1, lat: 45.399475, lng: 1.3733, adresse: "", description: ""},
-            {id: 5, nom: "BEAULIEU", ville: "BEAULIEU SUR DORDOGNE", adherents: 1, lat: 44.9782193, lng: 1.8377313, adresse: "", description: ""},
-            {id: 6, nom: "BRIVE", ville: "BRIVE LA GAILLARDE", adherents: 16, lat: 45.1584982, lng: 1.5332389, adresse: "", description: ""},
-            {id: 7, nom: "BEYNAT", ville: "BEYNAT", adherents: 1, lat: 45.148912, lng: 1.7218235, adresse: "", description: ""},
-            {id: 8, nom: "CARS", ville: "CARS", adherents: 1, lat: 45.215731, lng: 1.59956, adresse: "", description: ""},
-            {id: 9, nom: "CHAMBOULIVE", ville: "CHAMBOULIVE", adherents: 1, lat: 45.42307, lng: 1.67435, adresse: "", description: ""},
-            {id: 10, nom: "CHAMEYRAT", ville: "CHAMEYRAT", adherents: 1, lat: 45.2335546, lng: 1.6974158, adresse: "", description: ""},
-            {id: 11, nom: "CHAMPAGNAC", ville: "CHAMPAGNAC LA NOAILLE", adherents: 1, lat: 45.3073963, lng: 2.0168176, adresse: "", description: ""},
-            {id: 12, nom: "COSNAC", ville: "COSNAC", adherents: 3, lat: 45.1331, lng: 1.58763, adresse: "", description: ""},
-            {id: 13, nom: "CRESSENSAC", ville: "CRESSENSAC SARRAZAC", adherents: 1, lat: 45.202577, lng: 1.519831, adresse: "", description: ""},
-            {id: 14, nom: "CUBLAC", ville: "CUBLAC", adherents: 1, lat: 45.1442316, lng: 1.3056983, adresse: "", description: ""},
-            {id: 15, nom: "EGLETONS", ville: "EGLETONS", adherents: 3, lat: 45.4065523, lng: 2.042, adresse: "", description: ""},
-            {id: 16, nom: "HAUTEFAGE", ville: "HAUTEFAGE", adherents: 1, lat: 45.0816106, lng: 2.001341, adresse: "", description: ""},
-            {id: 17, nom: "JUGEALS NAZARETH", ville: "JUGEALS NAZARETH", adherents: 1, lat: 45.0812305, lng: 1.5585602, adresse: "", description: ""},
-            {id: 18, nom: "LAGARDE MARC LA TOUR", ville: "LAGARDE MARC LA TOUR", adherents: 1, lat: 45.1908046, lng: 1.830412, adresse: "", description: ""},
-            {id: 19, nom: "MALEMORT", ville: "MALEMORT", adherents: 4, lat: 45.179675, lng: 1.533, adresse: "", description: ""},
-            {id: 20, nom: "NAVES", ville: "NAVES", adherents: 1, lat: 45.312139, lng: 1.7664774, adresse: "", description: ""},
-            {id: 21, nom: "OBJAT", ville: "OBJAT", adherents: 1, lat: 45.2628546, lng: 1.4097899, adresse: "", description: ""},
-            {id: 22, nom: "PANDRIGNES", ville: "PANDRIGNES", adherents: 2, lat: 45.2281323, lng: 1.8547415, adresse: "", description: ""},
-            {id: 23, nom: "SADROC", ville: "SADROC", adherents: 1, lat: 45.2828668, lng: 1.5492086, adresse: "", description: ""},
-            {id: 24, nom: "ST PANTALEON", ville: "ST PANTALEON DE LARCHE", adherents: 3, lat: 45.1406943, lng: 1.446519, adresse: "", description: ""},
-            {id: 25, nom: "TULLE", ville: "TULLE", adherents: 1, lat: 45.2678347, lng: 1.7706797, adresse: "", description: ""},
-            {id: 26, nom: "USSAC", ville: "USSAC", adherents: 1, lat: 45.207312, lng: 1.747067, adresse: "", description: ""},
-            {id: 27, nom: "UZERCH", ville: "UZERCH", adherents: 1, lat: 45.4243023, lng: 1.5636393, adresse: "", description: ""},
-            {id: 28, nom: "VARETZ", ville: "VARETZ", adherents: 1, lat: 45.147469, lng: 1.447493, adresse: "", description: ""},
-            {id: 29, nom: "VIGNOLS", ville: "VIGNOLS", adherents: 1, lat: 45.3193629, lng: 1.3892897, adresse: "", description: ""}
-        ];
-
-        // =============================================
-        // CONFIGURATION PERSONNALISATION
-        // =============================================
-        var configPersonnalisation = {
-            icone: { couleur: "#FF9800", taille: 24, texteCouleur: "#FFFFFF", texte: "CFDT" },
-            libelle: { couleur: "#FF9800", taille: 11, fond: "#FFFFFF", compact: true, bordure: "thin" }
+        let configPersonnalisation = {
+            icone: {
+                couleur: "#FF9800",
+                taille: 24,
+                texteCouleur: "#FFFFFF",
+                texte: "CFDT"
+            },
+            libelle: {
+                couleur: "#FF9800",
+                taille: 12,
+                fond: "#FFFFFF",
+                compact: true,
+                bordure: "thin"
+            }
         };
-
+        
         // =============================================
         // VARIABLES GLOBALES
         // =============================================
         var carte;
         var fondCarteActuel;
         var marqueurs = [];
-        var libelles = [];
         var centreCorreze = [45.20, 1.80];
         var zoomDepartementCorreze = 9;
-        var dernierId = 29;
+        var pointsAdherents = [];
         var pointEnEdition = null;
-
-        // Données démographiques
+        var dernierId = 0;
+        
+        // Données INSEE Corrèze
         var populationCorreze = 240826;
         var seniorsCorreze = 88116;
+		
+        // =============================================
+        // DONNÉES ADHÉRENTS
+        // =============================================
+        var adherents = [
+            {id: 1, nom: "ALBUSSAC", ville: "ALBUSSAC", adherents: 3, lat: 45.1395791, lng: 1.8356481, adresse: "", description: ""},
+            {id: 2, nom: "ALLASSAC", ville: "ALLASSAC", adherents: 1, lat: 45.2593, lng: 1.4757, adresse: "", description: ""},
+            {id: 3, nom: "ARGENTAT S", ville: "ARGENTAT SUR DORDOGN", adherents: 3, lat: 45.1165803, lng: 1.9404253, adresse: "", description: ""},
+            {id: 4, nom: "ARNAC POM", ville: "ARNAC POMPADOUR", adherents: 1, lat: 45.399475, lng: 1.3733, adresse: "", description: ""},
+            {id: 5, nom: "BEAULIEU SU", ville: "BEAULIEU SUR DORDOGN", adherents: 1, lat: 44.9782193, lng: 1.8377313, adresse: "", description: ""},
+            {id: 6, nom: "BRIVE LA GA", ville: "BRIVE LA GAILLARDE", adherents: 16, lat: 45.1584982, lng: 1.5332389, adresse: "", description: ""},
+            {id: 7, nom: "BEYNAT", ville: "BEYNAT", adherents: 1, lat: 45.148912, lng: 1.7218235, adresse: "", description: ""},
+            {id: 8, nom: "CARS", ville: "CARS", adherents: 1, lat: 45.215731, lng: 1.59956, adresse: "", description: ""},
+            {id: 9, nom: "CHAMBOULIVE", ville: "CHAMBOULIVE", adherents: 1, lat: 45.42307, lng: 1.67435, adresse: "", description: ""},
+            {id: 10, nom: "CHAMEYRAT", ville: "CHAMEYRAT", adherents: 1, lat: 45.2335546, lng: 1.6974158, adresse: "", description: ""},
+            {id: 11, nom: "CHAMPAGNAC", ville: "CHAMPAGNAC LA NOAILL", adherents: 1, lat: 45.3073963, lng: 2.0168176, adresse: "", description: ""},
+            {id: 12, nom: "COSNAC", ville: "COSNAC", adherents: 3, lat: 45.1331, lng: 1.58763, adresse: "", description: ""},
+            {id: 13, nom: "CRESSENSAC", ville: "CRESSENSAC SARRAZAC", adherents: 1, lat: 45.202577, lng: 1.519831, adresse: "", description: ""},
+            {id: 14, nom: "CUBLAC", ville: "CUBLAC", adherents: 1, lat: 45.1442316, lng: 1.3056983, adresse: "", description: ""},
+            {id: 15, nom: "EGLETONS", ville: "EGLETONS", adherents: 3, lat: 45.4065523, lng: 2.042, adresse: "", description: ""},
+            {id: 16, nom: "HAUTEFAGE", ville: "HAUTEFAGE", adherents: 1, lat: 45.0816106, lng: 2.001341, adresse: "", description: ""},
+            {id: 17, nom: "JUGEALS NAZ", ville: "JUGEALS NAZARETH", adherents: 1, lat: 45.0812305, lng: 1.5585602, adresse: "", description: ""},
+            {id: 18, nom: "JUILLAC", ville: "JUILLAC", adherents: 0, lat: 45.317344, lng: 1.321478, adresse: "", description: ""},
+            {id: 19, nom: "LA FEUILLAD", ville: "LA FEUILLAD", adherents: 1, lat: 45.114568, lng: 1.4002557, adresse: "", description: ""},
+            {id: 20, nom: "LA ROCHE CA", ville: "LA ROCHE CANILLAC", adherents: 1, lat: 45.1956234, lng: 1.9693752, adresse: "", description: ""},
+            {id: 21, nom: "LAGARDE MA", ville: "LAGARDE MARC LA TOUR", adherents: 1, lat: 45.1908046, lng: 1.830412, adresse: "", description: ""},
+            {id: 22, nom: "LAGLEYGEOL", ville: "LAGLEYGEOLLE", adherents: 1, lat: 45.083337, lng: 1.694272, adresse: "", description: ""},
+            {id: 23, nom: "LAGUENNE S", ville: "LAGUENNE SUR AVALOUZ", adherents: 1, lat: 45.2475656, lng: 1.790103, adresse: "", description: ""},
+            {id: 24, nom: "LE CHASTANG", ville: "LE CHASTANG", adherents: 1, lat: 45.1723838, lng: 1.724495, adresse: "", description: ""},
+            {id: 25, nom: "LES TROIS SA", ville: "LES TROIS SAINTS", adherents: 1, lat: 45.440435, lng: 1.522122, adresse: "", description: ""},
+            {id: 26, nom: "LIGNIAC", ville: "LIGNIAC", adherents: 1, lat: 45.4144112, lng: 2.333005, adresse: "", description: ""},
+            {id: 27, nom: "LIMOGES", ville: "LIMOGES", adherents: 1, lat: 45.8344241, lng: 1.264847, adresse: "", description: ""},
+            {id: 28, nom: "LUBERSAC", ville: "LUBERSAC", adherents: 1, lat: 45.4456945, lng: 1.4040072, adresse: "", description: ""},
+            {id: 29, nom: "MALEMORT", ville: "MALEMORT", adherents: 4, lat: 45.179675, lng: 1.533, adresse: "", description: ""},
+            {id: 30, nom: "MANSAC", ville: "MANSAC", adherents: 1, lat: 45.1682435, lng: 1.3826406, adresse: "", description: ""},
+            {id: 31, nom: "NADAILLAC", ville: "NADAILLAC", adherents: 1, lat: 45.03872, lng: 1.39725, adresse: "", description: ""},
+            {id: 32, nom: "NAVES", ville: "NAVES", adherents: 1, lat: 45.312139, lng: 1.7664774, adresse: "", description: ""},
+            {id: 33, nom: "NOAILLES", ville: "NOAILLES", adherents: 1, lat: 45.1014092, lng: 1.5236825, adresse: "", description: ""},
+            {id: 34, nom: "OBJAT", ville: "OBJAT", adherents: 1, lat: 45.2628546, lng: 1.4097899, adresse: "", description: ""},
+            {id: 35, nom: "PANDRIGNES", ville: "PANDRIGNES", adherents: 2, lat: 45.2281323, lng: 1.8547415, adresse: "", description: ""},
+            {id: 36, nom: "PARIS", ville: "PARIS", adherents: 1, lat: 48.859018, lng: 2.347032, adresse: "", description: ""},
+            {id: 37, nom: "SADROC", ville: "SADROC", adherents: 1, lat: 45.2828668, lng: 1.5492086, adresse: "", description: ""},
+            {id: 38, nom: "SALON LA TOUR", ville: "SALON LA TOUR", adherents: 1, lat: 45.5044021, lng: 1.5389774, adresse: "", description: ""},
+            {id: 39, nom: "SARRAN", ville: "SARRAN", adherents: 1, lat: 45.4097306, lng: 1.9382743, adresse: "", description: ""},
+            {id: 40, nom: "SEGONZAC", ville: "SEGONZAC", adherents: 1, lat: 45.278494, lng: 1.267858, adresse: "", description: ""},
+            {id: 41, nom: "SEILHAC", ville: "SEILHAC", adherents: 1, lat: 45.3663548, lng: 1.7144158, adresse: "", description: ""},
+            {id: 42, nom: "ST CLEMENT", ville: "ST CLEMENT", adherents: 1, lat: 45.339547, lng: 1.682669, adresse: "", description: ""},
+            {id: 43, nom: "ST GEORGES", ville: "ST GEORGES", adherents: 1, lat: 45.9731105, lng: 0.2708349, adresse: "", description: ""},
+            {id: 44, nom: "ST HILAIRE PI", ville: "ST HILAIRE PEYROUX", adherents: 1, lat: 45.2135945, lng: 1.6485671, adresse: "", description: ""},
+            {id: 45, nom: "ST MARTIAL", ville: "ST MARTIAL DE GIMEL", adherents: 1, lat: 45.2665204, lng: 1.8718724, adresse: "", description: ""},
+            {id: 46, nom: "ST MAURICE", ville: "ST MAURICE LES BROUSSE", adherents: 1, lat: 45.6985284, lng: 1.2361207, adresse: "", description: ""},
+            {id: 47, nom: "ST PANTALEO", ville: "ST PANTALEON DE LARCHI", adherents: 3, lat: 45.1406943, lng: 1.446519, adresse: "", description: ""},
+            {id: 48, nom: "ST PARDOUX", ville: "ST PARDOUX CORBIER", adherents: 1, lat: 45.449526, lng: 1.457923, adresse: "", description: ""},
+            {id: 49, nom: "ST SOLVE", ville: "ST SOLVE", adherents: 1, lat: 45.3097839, lng: 1.4003585, adresse: "", description: ""},
+            {id: 50, nom: "ST SYLVAIN", ville: "ST SYLVAIN", adherents: 1, lat: 45.1758539, lng: 1.875582, adresse: "", description: ""},
+            {id: 51, nom: "ST VIANCE", ville: "ST VIANCE", adherents: 1, lat: 45.2176112, lng: 1.4521769, adresse: "", description: ""},
+            {id: 52, nom: "STE FEREOLE", ville: "STE FEREOLE", adherents: 1, lat: 45.2538138, lng: 1.5854783, adresse: "", description: ""},
+            {id: 53, nom: "STE FORTUN", ville: "STE FORTUNADE", adherents: 1, lat: 45.2072935, lng: 1.7719357, adresse: "", description: ""},
+            {id: 54, nom: "TULLE", ville: "TULLE", adherents: 1, lat: 45.2678347, lng: 1.7706797, adresse: "", description: ""},
+            {id: 55, nom: "USSAC", ville: "USSAC", adherents: 1, lat: 45.207312, lng: 1.747067, adresse: "", description: ""},
+            {id: 56, nom: "UZERCH", ville: "UZERCH", adherents: 1, lat: 45.4243023, lng: 1.5636393, adresse: "", description: ""},
+            {id: 57, nom: "VARETZ", ville: "VARETZ", adherents: 1, lat: 45.147469, lng: 1.447493, adresse: "", description: ""},
+            {id: 58, nom: "VIGNOLS", ville: "VIGNOLS", adherents: 1, lat: 45.3193629, lng: 1.3892897, adresse: "", description: ""}
+        ];
 
         // =============================================
         // 1. INITIALISATION DE LA CARTE
         // =============================================
         function initialiserCarte() {
-            console.log("Initialisation de la carte...");
-            
+            // Attendre que Leaflet soit chargé
             if (typeof L === 'undefined') {
-                console.error("Leaflet non chargé, réessai...");
-                setTimeout(initialiserCarte, 500);
+                console.log("Attente de Leaflet...");
+                setTimeout(initialiserCarte, 100);
                 return;
             }
             
-            carte = L.map('carte-correze').setView(centreCorreze, zoomDepartementCorreze);
+            console.log("Initialisation de la carte...");
             
+            carte = L.map('carte-correze').setView(centreCorreze, zoomDepartementCorreze);
             changerCarte('chaud');
-            ajouterContourCorreze();
-            ajouterInfosDemographiques();
+            
+            // Charger les données des adhérents
+            pointsAdherents = adherents;
+            dernierId = 58;
             
             ajouterPointsSurCarte();
             
-            // Clic sur la carte
+            // Écouteur de clic unique sur la carte
             carte.on('click', function(e) {
-                document.getElementById('latEHPAD').value = e.latlng.lat.toFixed(6);
-                document.getElementById('lngEHPAD').value = e.latlng.lng.toFixed(6);
-                
-                fetch(`https://nominatim.openstreetmap.org/reverse?lat=${e.latlng.lat}&lon=${e.latlng.lng}&format=json`)
+                var lat = e.latlng.lat.toFixed(6);
+                var lng = e.latlng.lng.toFixed(6);
+
+                document.getElementById('latEHPAD').value = lat;
+                document.getElementById('lngEHPAD').value = lng;
+
+                fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`)
                     .then(response => response.json())
                     .then(data => {
+                        var ville = "";
+                        var codePostal = "";
+                        var adresseCourte = "";
+
                         if (data.address) {
-                            var ville = data.address.city || data.address.town || data.address.village || "";
-                            if (ville) document.getElementById('villeEHPAD').value = ville;
+                            ville = data.address.city || data.address.town || data.address.village || "";
+                            codePostal = data.address.postcode || "";
+                            var numero = data.address.house_number || "";
+                            var rue = data.address.road || "";
+                            adresseCourte = `${numero} ${rue}, ${codePostal} ${ville}`.trim();
                         }
+
+                        document.getElementById('villeEHPAD').value = ville;
+                        document.getElementById('cpEHPAD').value = codePostal;
+                        document.getElementById('adresseEHPAD').value = adresseCourte;
+
+                        L.popup()
+                            .setLatLng(e.latlng)
+                            .setContent("Latitude : " + lat + "<br>Longitude : " + lng + "<br>Ville : " + ville + "<br>Code postal : " + codePostal + "<br><strong>Adresse :</strong> " + adresseCourte)
+                            .openOn(carte);
                     })
                     .catch(err => console.log("Erreur géocodage:", err));
             });
             
-            // Écouteurs
-            document.getElementById('iconSize').addEventListener('input', function() {
-                document.getElementById('iconSizeValue').textContent = this.value + 'px';
-            });
-            document.getElementById('labelSize').addEventListener('input', function() {
-                document.getElementById('labelSizeValue').textContent = this.value + 'px';
-            });
+            ajouterContourCorreze();
+            ajouterInfosDemographiques();
+            initPersonnalisation();
+            mettreAJourStats();
+            
             document.getElementById('recherche').addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') rechercherPoint();
             });
             
-            initPersonnalisation();
-            mettreAJourStats();
-            console.log("Carte initialisée avec", pointsAdherents.length, "points");
+            console.log("Carte initialisée avec succès");
+        }
+		
+        // =============================================
+        // 2. INFOS DÉMOGRAPHIQUES
+        // =============================================
+        function ajouterInfosDemographiques() {
+            var InfosDemoControl = L.Control.extend({
+                options: { position: 'bottomleft' },
+                onAdd: function(map) {
+                    var container = L.DomUtil.create('div', 'infos-demographiques leaflet-control');
+                    container.innerHTML = `
+                        <div style="background: rgba(255,255,255,0.92); padding: 8px 12px; border-radius: 4px; border-left: 3px solid #2c3e50; font-size: 10px; line-height: 1.4; box-shadow: 0 2px 5px rgba(0,0,0,0.1); max-width: 200px;">
+                            <strong>📊 Données départementales</strong><br>
+                            👥 Population : ~240,826 hab.<br>
+                            🗺️ Superficie : 5857 km²<br>
+                            📊 Densité : 41 hab/km²<br>
+                            👥 Salariés : 82500<br>
+                            👴 60+ : ${((seniorsCorreze/populationCorreze)*100).toFixed(1)}%
+                        </div>
+                    `;
+                    L.DomEvent.disableClickPropagation(container);
+                    return container;
+                }
+            });
+            carte.addControl(new InfosDemoControl());
         }
         
         // =============================================
-        // 2. CONTOUR DE LA CORRÈZE
+        // 3. CONTOUR DE LA CORRÈZE
         // =============================================
         function ajouterContourCorreze() {
             var contourCorreze = [
@@ -537,166 +736,16 @@
             
             L.polygon(contourCorreze, {
                 color: '#2E8B57',
-                weight: 3,
+                weight: 5,
                 opacity: 0.7,
                 fillColor: '#2E8B57',
-                fillOpacity: 0.05,
+                fillOpacity: 0.1,
                 interactive: false
             }).addTo(carte);
         }
         
         // =============================================
-        // 3. INFOS DÉMOGRAPHIQUES
-        // =============================================
-        function ajouterInfosDemographiques() {
-            var InfosDemoControl = L.Control.extend({
-                options: { position: 'bottomleft' },
-                onAdd: function(map) {
-                    var container = L.DomUtil.create('div', 'infos-demographiques leaflet-control');
-                    container.innerHTML = `
-                        <div style="background: rgba(255,255,255,0.92); padding: 6px 10px; border-radius: 4px; border-left: 3px solid #2E8B57; font-size: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                            <strong>📊 Corrèze</strong><br>
-                            👥 Population: ~240 826 hab.<br>
-                            👴 +60 ans: ${((seniorsCorreze/populationCorreze)*100).toFixed(1)}%
-                        </div>
-                    `;
-                    L.DomEvent.disableClickPropagation(container);
-                    return container;
-                }
-            });
-            carte.addControl(new InfosDemoControl());
-        }
-        
-        // =============================================
-        // 4. CHANGER LE FOND DE CARTE
-        // =============================================
-        function changerCarte(type) {
-            if (fondCarteActuel && carte) carte.removeLayer(fondCarteActuel);
-            
-            var layer;
-            switch(type) {
-                case 'chaud':
-                    layer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap France' });
-                    break;
-                case 'osm':
-                    layer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' });
-                    break;
-                case 'topo':
-                    layer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { attribution: '© OpenTopoMap' });
-                    break;
-                case 'noir':
-                    layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution: '© CARTO' });
-                    break;
-                case 'satellite':
-                    layer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: '© Esri' });
-                    break;
-                case 'cyclisme':
-                    layer = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', { attribution: '© CyclOSM', maxZoom: 20 });
-                    break;
-                default:
-                    layer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap France' });
-            }
-            fondCarteActuel = layer;
-            if (carte) layer.addTo(carte);
-        }
-        
-        // =============================================
-        // 5. CRÉATION D'ICÔNE PERSONNALISÉE
-        // =============================================
-        function creerIconePersonnalisee() {
-            var taille = configPersonnalisation.icone.taille;
-            return L.divIcon({
-                html: `<div style="width:${taille}px;height:${taille}px;background:${configPersonnalisation.icone.couleur};color:${configPersonnalisation.icone.texteCouleur};border-radius:50%;border:2px solid white;box-shadow:0 0 5px rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:${Math.max(8, taille/3)}px;font-family:Arial;text-align:center;">${configPersonnalisation.icone.texte}</div>`,
-                className: 'icone-cfdt',
-                iconSize: [taille + 4, taille + 4],
-                popupAnchor: [0, -taille/2]
-            });
-        }
-        
-        // =============================================
-        // 6. CRÉATION DE LIBELLÉ PERSONNALISÉ (au-dessus du logo)
-        // =============================================
-        function creerLibellePersonnalise(lat, lng, point) {
-            var padding = configPersonnalisation.libelle.compact ? "2px 6px" : "4px 10px";
-            var borderWidth = configPersonnalisation.libelle.bordure === "thin" ? "0.5px" : 
-                              configPersonnalisation.libelle.bordure === "medium" ? "1px" : "0px";
-            var borderRadius = configPersonnalisation.libelle.compact ? "3px" : "5px";
-            var fontWeight = configPersonnalisation.libelle.compact ? 'normal' : 'bold';
-            
-            return L.tooltip({
-                permanent: true,
-                direction: 'top',
-                offset: [0, -configPersonnalisation.icone.taille - 5]
-            })
-            .setLatLng([lat, lng])
-            .setContent(`
-                <div style="
-                    color: ${configPersonnalisation.libelle.couleur};
-                    background: ${configPersonnalisation.libelle.fond};
-                    padding: ${padding};
-                    border-radius: ${borderRadius};
-                    border: ${borderWidth} solid ${configPersonnalisation.libelle.couleur};
-                    font-size: ${configPersonnalisation.libelle.taille}px;
-                    font-weight: ${fontWeight};
-                    white-space: nowrap;
-                    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-                    text-align: center;
-                ">
-                    ${point.nom} - ${point.adherents || 0} adh.
-                </div>
-            `);
-        }
-        
-        // =============================================
-        // 7. CONTENU POPUP
-        // =============================================
-        function creerContenuPopup(point) {
-            return `
-                <div style="min-width: 220px;">
-                    <h3 style="color: #FF9800; margin:0 0 8px 0;">${point.nom}</h3>
-                    <p><strong>📍 Adresse :</strong> ${point.adresse || 'Non renseignée'}</p>
-                    <p><strong>👥 Adhérents :</strong> <span style="color:#FF9800;font-weight:bold;">${point.adherents || 0}</span></p>
-                    <p><strong>🏙️ Ville :</strong> ${point.ville}</p>
-                    ${point.description ? `<p><strong>ℹ️ Description :</strong> ${point.description}</p>` : ''}
-                    <hr style="margin:8px 0;">
-                    <button onclick="modifierPopup(${point.id})" style="background:#FF9800;color:white;border:none;padding:6px 12px;border-radius:3px;cursor:pointer;margin-right:5px;">✏️ Modifier</button>
-                    <button onclick="supprimerPoint(${point.id})" style="background:#f44336;color:white;border:none;padding:6px 12px;border-radius:3px;cursor:pointer;">🗑️ Supprimer</button>
-                </div>
-            `;
-        }
-        
-        // =============================================
-        // 8. AJOUTER TOUS LES POINTS SUR LA CARTE
-        // =============================================
-        function ajouterPointsSurCarte() {
-            if (!carte) return;
-            
-            // Supprimer anciens marqueurs et libellés
-            marqueurs.forEach(function(m) { if (carte.hasLayer(m)) carte.removeLayer(m); });
-            libelles.forEach(function(l) { if (carte.hasLayer(l)) carte.removeLayer(l); });
-            marqueurs = [];
-            libelles = [];
-            
-            // Ajouter les nouveaux
-            pointsAdherents.forEach(function(point) {
-                var icone = creerIconePersonnalisee();
-                var marqueur = L.marker([point.lat, point.lng], { icon: icone })
-                    .bindPopup(creerContenuPopup(point))
-                    .addTo(carte);
-                marqueur.pointData = point;
-                marqueurs.push(marqueur);
-                
-                var libelle = creerLibellePersonnalise(point.lat, point.lng, point);
-                libelle.addTo(carte);
-                libelles.push(libelle);
-            });
-            
-            document.getElementById('compteur-points').textContent = pointsAdherents.length;
-            mettreAJourStats();
-        }
-        
-        // =============================================
-        // 9. PERSONNALISATION
+        // 4. INITIALISATION PERSONNALISATION
         // =============================================
         function initPersonnalisation() {
             document.getElementById('iconColor').value = configPersonnalisation.icone.couleur;
@@ -704,12 +753,14 @@
             document.getElementById('iconSizeValue').textContent = configPersonnalisation.icone.taille + 'px';
             document.getElementById('textColor').value = configPersonnalisation.icone.texteCouleur;
             document.getElementById('iconText').value = configPersonnalisation.icone.texte;
+            
             document.getElementById('labelColor').value = configPersonnalisation.libelle.couleur;
             document.getElementById('labelSize').value = configPersonnalisation.libelle.taille;
             document.getElementById('labelSizeValue').textContent = configPersonnalisation.libelle.taille + 'px';
             document.getElementById('labelBgColor').value = configPersonnalisation.libelle.fond;
             document.getElementById('labelCompact').checked = configPersonnalisation.libelle.compact;
             document.getElementById('labelBorder').value = configPersonnalisation.libelle.bordure;
+            
             updatePreviews();
         }
         
@@ -725,28 +776,184 @@
             configPersonnalisation.icone.taille = parseInt(document.getElementById('iconSize').value);
             configPersonnalisation.icone.texteCouleur = document.getElementById('textColor').value;
             configPersonnalisation.icone.texte = document.getElementById('iconText').value;
+            
             configPersonnalisation.libelle.couleur = document.getElementById('labelColor').value;
             configPersonnalisation.libelle.taille = parseInt(document.getElementById('labelSize').value);
             configPersonnalisation.libelle.fond = document.getElementById('labelBgColor').value;
             configPersonnalisation.libelle.compact = document.getElementById('labelCompact').checked;
             configPersonnalisation.libelle.bordure = document.getElementById('labelBorder').value;
+            
             updatePreviews();
-            ajouterPointsSurCarte();
-            sauvegarderDonnees();
+            
+            if (pointsAdherents.length > 0) {
+                rechargerMarqueursAvecPersonnalisation();
+                alert("✅ Personnalisation appliquée !");
+            }
         }
         
         function resetPersonnalisation() {
             configPersonnalisation = {
                 icone: { couleur: "#FF9800", taille: 24, texteCouleur: "#FFFFFF", texte: "CFDT" },
-                libelle: { couleur: "#FF9800", taille: 11, fond: "#FFFFFF", compact: true, bordure: "thin" }
+                libelle: { couleur: "#FF9800", taille: 12, fond: "#FFFFFF", compact: true, bordure: "thin" }
             };
             initPersonnalisation();
-            ajouterPointsSurCarte();
-            alert("Personnalisation réinitialisée");
+            rechargerMarqueursAvecPersonnalisation();
+            alert("🔄 Personnalisation réinitialisée");
         }
         
         // =============================================
-        // 10. CRUD POINTS
+        // 5. CRÉATION D'ICÔNE PERSONNALISÉE
+        // =============================================
+        function creerIconePersonnalisee() {
+            var tailleReelle = configPersonnalisation.icone.taille;
+            var tailleAffichage = tailleReelle + 3;
+            
+            return L.divIcon({
+                html: '<div style="width:' + tailleReelle + 'px;height:' + tailleReelle + 'px;background:' + configPersonnalisation.icone.couleur + ';color:' + configPersonnalisation.icone.texteCouleur + ';border-radius:50%;border:2px solid white;box-shadow:0 0 8px rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:' + Math.max(8, tailleReelle / 3.5) + 'px;font-family:Arial, sans-serif;text-align:center;line-height:1.1;cursor:pointer;text-shadow:1px 1px 1px rgba(0,0,0,0.3);">' + configPersonnalisation.icone.texte + '</div>',
+                className: 'icone-cfdt-personnalisee',
+                iconSize: [tailleAffichage, tailleAffichage]
+            });
+        }
+        
+        // =============================================
+        // 6. CRÉATION DE LIBELLÉ PERSONNALISÉ
+        // =============================================
+        function creerLibellePersonnalise(lat, lng, point) {
+            var padding, borderWidth, borderRadius, marginBottom;
+            
+            if (configPersonnalisation.libelle.compact) {
+                padding = "1px 4px";
+                borderWidth = configPersonnalisation.libelle.bordure === "thin" ? "0.5px" : 
+                              configPersonnalisation.libelle.bordure === "medium" ? "1px" : "0px";
+                borderRadius = "2px";
+                marginBottom = "3px";
+            } else {
+                padding = "3px 8px";
+                borderWidth = "1.5px";
+                borderRadius = "4px";
+                marginBottom = "5px";
+            }
+            
+            return L.tooltip({
+                permanent: true,
+                direction: 'top',
+                offset: [0, -15 - (configPersonnalisation.libelle.compact ? 3 : 0)]
+            })
+            .setLatLng([lat, lng])
+            .setContent('<div style="color:' + configPersonnalisation.libelle.couleur + ';background:' + configPersonnalisation.libelle.fond + ';padding:' + padding + ';border-radius:' + borderRadius + ';border:' + borderWidth + ' solid ' + configPersonnalisation.libelle.couleur + ';font-size:' + configPersonnalisation.libelle.taille + 'px;font-weight:' + (configPersonnalisation.libelle.compact ? 'normal' : 'bold') + ';white-space:nowrap;margin-bottom:' + marginBottom + ';line-height:1.2;box-shadow:0 1px 3px rgba(0,0,0,0.2);text-align:center;">' + point.nom + ' - ' + (point.adherents || "?") + ' adh.</div>');
+        }
+        
+        // =============================================
+        // 7. CONTENU POPUP
+        // =============================================
+        function creerContenuPopup(point) {
+            return '<div style="min-width: 250px; font-family: Arial, sans-serif;"><h3 style="color:' + configPersonnalisation.icone.couleur + ';margin-top:0;">' + point.nom + '</h3><p><strong><i class="fas fa-map-marker-alt"></i> Adresse :</strong> ' + (point.adresse || 'Non renseignée') + '</p><p><strong><i class="fas fa-users"></i> Adhérents :</strong> <span style="color:' + configPersonnalisation.icone.couleur + ';font-weight:bold;">' + (point.adherents || '0') + '</span></p><p><strong><i class="fas fa-city"></i> Ville :</strong> ' + point.ville + '</p><p><strong><i class="fas fa-map-pin"></i> Coordonnées :</strong> ' + point.lat.toFixed(4) + ', ' + point.lng.toFixed(4) + '</p>' + (point.description ? '<p><strong><i class="fas fa-info-circle"></i> Description :</strong> ' + point.description + '</p>' : '') + '<hr><div style="display:flex;gap:5px;justify-content:center;"><button onclick="modifierPopup(' + point.id + ')" style="background:#FF9800;color:white;border:none;padding:8px 15px;border-radius:3px;cursor:pointer;font-size:13px;display:flex;align-items:center;gap:5px;"><i class="fas fa-edit"></i> Modifier</button><button onclick="supprimerPoint(' + point.id + ')" style="background:#f44336;color:white;border:none;padding:5px 10px;border-radius:3px;cursor:pointer;font-size:12px;"><i class="fas fa-trash"></i> Supprimer</button></div></div>';
+        }
+        
+        // =============================================
+        // 8. CHANGER LE FOND DE CARTE
+        // =============================================
+        function changerCarte(type) {
+            if (fondCarteActuel) {
+                carte.removeLayer(fondCarteActuel);
+            }
+            
+            switch(type) {
+                case 'chaud':
+                    fondCarteActuel = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap France | CFDT Corrèze' }).addTo(carte);
+                    break;
+                case 'osm':
+                    fondCarteActuel = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(carte);
+                    break;
+                case 'topo':
+                    fondCarteActuel = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { attribution: '© OpenTopoMap' }).addTo(carte);
+                    break;
+                case 'noir':
+                    fondCarteActuel = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution: '© CARTO' }).addTo(carte);
+                    break;
+                case 'satellite':
+                    fondCarteActuel = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: '© Esri' }).addTo(carte);
+                    break;
+                case 'cyclisme':
+                    fondCarteActuel = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', { attribution: '© CyclOSM', maxZoom: 20 }).addTo(carte);
+                    break;
+            }
+        }
+        
+        // =============================================
+        // 9. AJOUTER TOUS LES POINTS SUR LA CARTE
+        // =============================================
+        function ajouterPointsSurCarte() {
+            console.log("ajouterPointsSurCarte appelée avec", pointsAdherents.length, "points");
+            
+            marqueurs.forEach(function(marqueur) {
+                try {
+                    if (marqueur && carte.hasLayer(marqueur)) carte.removeLayer(marqueur);
+                    if (marqueur.libelle && carte.hasLayer(marqueur.libelle)) carte.removeLayer(marqueur.libelle);
+                } catch(e) { console.error("Erreur suppression marqueur:", e); }
+            });
+            
+            marqueurs = [];
+            
+            pointsAdherents.forEach(function(point) {
+                var icone = creerIconePersonnalisee();
+                var marqueur = L.marker([point.lat, point.lng], { icon: icone, title: point.nom }).addTo(carte);
+                
+                var pointActuel = pointsAdherents.find(p => p.id === point.id);
+                marqueur.bindPopup(creerContenuPopup(pointActuel));
+                
+                var libelle = creerLibellePersonnalise(pointActuel.lat, pointActuel.lng, pointActuel);
+                libelle.addTo(carte);
+                
+                marqueur.libelle = libelle;
+                marqueur.pointData = pointActuel;
+                marqueurs.push(marqueur);
+            });
+            
+            document.getElementById('compteur-points').textContent = pointsAdherents.length;
+            mettreAJourStats();
+            console.log("Carte recréée avec", marqueurs.length, "marqueurs");
+        }
+        
+        function rechargerMarqueursAvecPersonnalisation() {
+            if (pointsAdherents.length === 0) return;
+            ajouterPointsSurCarte();
+        }
+        
+        // =============================================
+        // 10. MODIFIER UN POINT
+        // =============================================
+        window.modifierPopup = function(id) {
+            console.log("modifierPopup appelé avec ID:", id);
+            var pointId = parseInt(id);
+            var point = pointsAdherents.find(p => p.id === pointId);
+            
+            if (!point) { alert("Erreur: Point introuvable"); return; }
+            
+            carte.closePopup();
+            
+            document.getElementById('nomEHPAD').value = point.nom;
+            document.getElementById('villeEHPAD').value = point.ville;
+            document.getElementById('adresseEHPAD').value = point.adresse || '';
+            document.getElementById('adherentsEHPAD').value = point.adherents;
+            document.getElementById('latEHPAD').value = point.lat;
+            document.getElementById('lngEHPAD').value = point.lng;
+            document.getElementById('descEHPAD').value = point.description || '';
+            
+            passerEnModeEdition(pointId);
+            carte.setView([point.lat, point.lng], 13);
+            document.querySelector('.formulaire-ajout').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+        
+        function passerEnModeEdition(pointId) {
+            document.getElementById('btn-ajouter').style.display = 'none';
+            document.getElementById('btn-update').style.display = 'inline-block';
+            document.getElementById('btn-cancel').style.display = 'inline-block';
+            document.getElementById('btn-update').setAttribute('data-point-id', pointId);
+        }
+        
+        // =============================================
+        // 11. AJOUTER UN POINT
         // =============================================
         function ajouterPoint() {
             var nom = document.getElementById('nomEHPAD').value.trim();
@@ -757,68 +964,57 @@
             var lng = parseFloat(document.getElementById('lngEHPAD').value);
             var description = document.getElementById('descEHPAD').value.trim();
             
-            if (!nom) { alert("Le nom est obligatoire"); return; }
-            if (!ville) { alert("La ville est obligatoire"); return; }
-            if (isNaN(adherents)) { alert("Le nombre d'adhérents est obligatoire"); return; }
-            if (isNaN(lat) || isNaN(lng)) { alert("Les coordonnées sont obligatoires"); return; }
+            if (!nom) { alert("Le nom est obligatoire"); document.getElementById('nomEHPAD').focus(); return; }
+            if (!ville) { alert("La ville est obligatoire"); document.getElementById('villeEHPAD').focus(); return; }
+            if (isNaN(adherents)) { alert("Le nombre d'adhérents doit être un nombre"); document.getElementById('adherentsEHPAD').focus(); return; }
+            if (isNaN(lat)) { alert("La latitude doit être un nombre"); document.getElementById('latEHPAD').focus(); return; }
+            if (isNaN(lng)) { alert("La longitude doit être un nombre"); document.getElementById('lngEHPAD').focus(); return; }
             
             dernierId++;
-            pointsAdherents.push({
-                id: dernierId, nom: nom, ville: ville, adresse: adresse,
-                adherents: adherents, lat: lat, lng: lng, description: description
-            });
+            var nouveauPoint = { id: dernierId, nom: nom, ville: ville, adresse: adresse, adherents: adherents, lat: lat, lng: lng, description: description };
             
+            pointsAdherents.push(nouveauPoint);
             ajouterPointsSurCarte();
             sauvegarderDonnees();
             reinitialiserFormulaire();
-            alert("✅ Point ajouté !");
+            mettreAJourStats();
+            alert("✅ Point ajouté avec succès !\nNom: " + nom + "\nVille: " + ville + "\nAdhérents: " + adherents);
             carte.setView([lat, lng], 13);
         }
         
-        window.modifierPopup = function(id) {
-            var point = pointsAdherents.find(p => p.id === id);
-            if (!point) return;
-            
-            document.getElementById('nomEHPAD').value = point.nom;
-            document.getElementById('villeEHPAD').value = point.ville;
-            document.getElementById('adresseEHPAD').value = point.adresse || '';
-            document.getElementById('adherentsEHPAD').value = point.adherents;
-            document.getElementById('latEHPAD').value = point.lat;
-            document.getElementById('lngEHPAD').value = point.lng;
-            document.getElementById('descEHPAD').value = point.description || '';
-            
-            document.getElementById('btn-ajouter').style.display = 'none';
-            document.getElementById('btn-update').style.display = 'inline-block';
-            document.getElementById('btn-cancel').style.display = 'inline-block';
-            document.getElementById('btn-update').setAttribute('data-point-id', id);
-            
-            carte.closePopup();
-            carte.setView([point.lat, point.lng], 13);
-        };
-        
+        // =============================================
+        // 12. METTRE À JOUR UN POINT
+        // =============================================
         function mettreAJourPoint() {
             var pointId = parseInt(document.getElementById('btn-update').getAttribute('data-point-id'));
-            var index = pointsAdherents.findIndex(p => p.id === pointId);
+            if (!pointId) { alert("Erreur : impossible de trouver l'ID du point"); return; }
             
-            if (index !== -1) {
-                pointsAdherents[index] = {
-                    id: pointId,
-                    nom: document.getElementById('nomEHPAD').value.trim(),
-                    ville: document.getElementById('villeEHPAD').value.trim(),
-                    adresse: document.getElementById('adresseEHPAD').value.trim(),
-                    adherents: parseInt(document.getElementById('adherentsEHPAD').value),
-                    lat: parseFloat(document.getElementById('latEHPAD').value),
-                    lng: parseFloat(document.getElementById('lngEHPAD').value),
-                    description: document.getElementById('descEHPAD').value.trim()
-                };
+            var nom = document.getElementById('nomEHPAD').value.trim();
+            var ville = document.getElementById('villeEHPAD').value.trim();
+            var adresse = document.getElementById('adresseEHPAD').value.trim();
+            var adherents = parseInt(document.getElementById('adherentsEHPAD').value);
+            var lat = parseFloat(document.getElementById('latEHPAD').value);
+            var lng = parseFloat(document.getElementById('lngEHPAD').value);
+            var description = document.getElementById('descEHPAD').value.trim();
+            
+            var pointIndex = pointsAdherents.findIndex(p => p.id === pointId);
+            
+            if (pointIndex !== -1) {
+                pointsAdherents[pointIndex] = { id: pointId, nom: nom, ville: ville, adresse: adresse, adherents: adherents, lat: lat, lng: lng, description: description };
+                carte.closePopup();
                 ajouterPointsSurCarte();
                 sauvegarderDonnees();
+                mettreAJourStats();
                 reinitialiserFormulaire();
                 alert("Point mis à jour !");
-            }
+                carte.setView([lat, lng], 13);
+            } else { alert("Erreur : point introuvable"); }
         }
         
-        function annulerEdition() { reinitialiserFormulaire(); }
+        function annulerEdition() {
+            reinitialiserFormulaire();
+            alert("Édition annulée. Retour au mode ajout.");
+        }
         
         function reinitialiserFormulaire() {
             document.getElementById('nomEHPAD').value = '';
@@ -834,90 +1030,109 @@
             pointEnEdition = null;
         }
         
+        // =============================================
+        // 13. SUPPRIMER UN POINT
+        // =============================================
         window.supprimerPoint = function(id) {
-            if (confirm("Supprimer ce point ?")) {
-                pointsAdherents = pointsAdherents.filter(p => p.id !== id);
-                ajouterPointsSurCarte();
-                sauvegarderDonnees();
-                mettreAJourStats();
-                alert("Point supprimé !");
-            }
+            if (!confirm("Voulez-vous vraiment supprimer ce point ?")) return;
+            pointsAdherents = pointsAdherents.filter(e => e.id !== id);
+            ajouterPointsSurCarte();
+            sauvegarderDonnees();
+            mettreAJourStats();
+            alert("Point supprimé avec succès !");
         };
         
         // =============================================
-        // 11. RECHERCHE ET ZOOM
+        // 14. RECHERCHER UN POINT
         // =============================================
         function rechercherPoint() {
             var recherche = document.getElementById('recherche').value.toLowerCase();
             if (!recherche) return;
             
             var trouve = false;
-            marqueurs.forEach(function(m) {
-                var nom = (m.pointData.nom || '').toLowerCase();
-                var ville = (m.pointData.ville || '').toLowerCase();
+            marqueurs.forEach(function(marqueur) {
+                var nom = marqueur.pointData.nom.toLowerCase();
+                var ville = marqueur.pointData.ville.toLowerCase();
                 if (nom.includes(recherche) || ville.includes(recherche)) {
-                    carte.setView([m.pointData.lat, m.pointData.lng], 13);
-                    m.openPopup();
+                    carte.setView([marqueur.pointData.lat, marqueur.pointData.lng], 13);
+                    marqueur.openPopup();
                     trouve = true;
                 }
             });
-            if (!trouve) alert("Aucun point trouvé : " + recherche);
+            if (!trouve) alert("Aucun point trouvé avec : " + recherche);
         }
         
+        // =============================================
+        // 15. ZOOM
+        // =============================================
         function zoomVille(nomVille) {
-            var coords = { 'Tulle': [45.2678347, 1.7706797], 'Brive': [45.1584982, 1.5332389], 'Ussel': [45.548, 2.309] };
-            if (coords[nomVille]) carte.setView(coords[nomVille], 13);
+            var point = pointsAdherents.find(e => e.nom.includes(nomVille) || e.ville.includes(nomVille));
+            if (point) { carte.setView([point.lat, point.lng], 13); }
+            else {
+                if (nomVille === 'Tulle') carte.setView([45.267, 1.767], 13);
+                else if (nomVille === 'Brive') carte.setView([45.158, 1.532], 13);
+                else if (nomVille === 'Ussel') carte.setView([45.548, 2.309], 13);
+            }
         }
         
         function zoomDepartement() { carte.setView(centreCorreze, zoomDepartementCorreze); }
         
         // =============================================
-        // 12. STATISTIQUES
+        // 16. STATISTIQUES
         // =============================================
         function mettreAJourStats() {
             var total = pointsAdherents.length;
             var totalAdherents = pointsAdherents.reduce((sum, p) => sum + (parseInt(p.adherents) || 0), 0);
             var moyenne = total > 0 ? (totalAdherents / total).toFixed(1) : 0;
             var pourcentageSeniors = ((seniorsCorreze / populationCorreze) * 100).toFixed(1);
-            document.getElementById('stats').innerHTML = `${total} points | Total: ${totalAdherents} adh. | Moyenne: ${moyenne} | +60 ans: ${pourcentageSeniors}%`;
+            document.getElementById('stats').innerHTML = total + ' points | Total adhérents: ' + totalAdherents + ' | Moyenne: ' + moyenne + ' | Population Corrèze : ' + populationCorreze + ' | +60 ans: ' + pourcentageSeniors + '%';
         }
         
         // =============================================
-        // 13. SAUVEGARDE / CHARGEMENT
+        // 17. SAUVEGARDE / CHARGEMENT
         // =============================================
         function sauvegarderDonnees() {
             localStorage.setItem('carteCFDTCorreze', JSON.stringify({ points: pointsAdherents, dernierId: dernierId, config: configPersonnalisation }));
         }
         
         function chargerDonnees() {
-            var saved = localStorage.getItem('carteCFDTCorreze');
-            if (saved) {
+            var donneesSauvegardees = localStorage.getItem('carteCFDTCorreze');
+            if (donneesSauvegardees) {
                 try {
-                    var data = JSON.parse(saved);
-                    if (data.points && data.points.length) { pointsAdherents = data.points; dernierId = data.dernierId; }
-                    if (data.config) configPersonnalisation = data.config;
-                } catch(e) {}
-            }
+                    var donnees = JSON.parse(donneesSauvegardees);
+                    pointsAdherents = donnees.points || [];
+                    dernierId = donnees.dernierId || 0;
+                    if (donnees.config) { configPersonnalisation = donnees.config; initPersonnalisation(); }
+                } catch(e) { pointsAdherents = []; dernierId = 0; }
+            } else { pointsAdherents = []; dernierId = 0; }
         }
         
         function reinitialiserDonnees() {
-            if (confirm("Réinitialiser toutes les données ?")) {
+            if (confirm("Voulez-vous vraiment réinitialiser toutes les données ?")) {
                 localStorage.removeItem('carteCFDTCorreze');
-                location.reload();
+                pointsAdherents = adherents;
+                dernierId = 58;
+                ajouterPointsSurCarte();
+                sauvegarderDonnees();
+                mettreAJourStats();
+                alert("Données réinitialisées !");
             }
         }
         
         // =============================================
-        // 14. EXPORT / IMPORT
+        // 18. EXPORT / IMPORT
         // =============================================
         function exporterDonnees() {
-            var blob = new Blob([JSON.stringify({ points: pointsAdherents }, null, 2)], {type: 'application/json'});
+            var blob = new Blob([JSON.stringify({ points: pointsAdherents, dateExport: new Date().toISOString() }, null, 2)], { type: 'application/json' });
             var url = URL.createObjectURL(blob);
             var a = document.createElement('a');
             a.href = url;
             a.download = 'cfdt-correze-' + new Date().toISOString().slice(0,10) + '.json';
+            document.body.appendChild(a);
             a.click();
+            document.body.removeChild(a);
             URL.revokeObjectURL(url);
+            alert("Données exportées !");
         }
         
         function importerDonnees() { document.getElementById('importFile').click(); }
@@ -928,40 +1143,78 @@
             var reader = new FileReader();
             reader.onload = function(event) {
                 try {
-                    var data = JSON.parse(event.target.result);
-                    if (data.points && Array.isArray(data.points)) {
-                        pointsAdherents = data.points;
-                        dernierId = Math.max(...data.points.map(p => p.id), 0);
+                    var donnees = JSON.parse(event.target.result);
+                    if (!donnees.points || !Array.isArray(donnees.points)) throw new Error("Format invalide");
+                    
+                    donnees.points.forEach(point => {
+                        if (point.Adresse !== undefined) { point.adresse = point.Adresse; delete point.Adresse; }
+                        if (!point.hasOwnProperty('adresse')) point.adresse = "";
+                        if (point.Adhérents !== undefined) { point.adherents = parseInt(point.Adhérents) || 0; delete point.Adhérents; }
+                        if (typeof point.adherents === 'string') point.adherents = parseInt(point.adherents) || 0;
+                        if (isNaN(point.adherents)) point.adherents = 0;
+                        if (!point.hasOwnProperty('description')) point.description = "";
+                        if (!point.hasOwnProperty('ville') && point.Ville) { point.ville = point.Ville; delete point.Ville; }
+                    });
+                    
+                    if (confirm("Voulez-vous importer " + donnees.points.length + " points ?")) {
+                        pointsAdherents = donnees.points;
+                        dernierId = Math.max(...donnees.points.map(e => e.id)) || donnees.points.length;
                         ajouterPointsSurCarte();
                         sauvegarderDonnees();
-                        alert(data.points.length + " points importés !");
-                    } else throw new Error("Format invalide");
-                } catch(err) { alert("Erreur: Fichier JSON invalide"); }
+                        mettreAJourStats();
+                        alert("Données importées avec succès !");
+                    }
+                } catch(err) { alert("Erreur: Fichier JSON invalide\n" + err.message); console.error(err); }
                 e.target.value = '';
             };
             reader.readAsText(file);
         });
         
+        // =============================================
+        // 19. CONVERSION CSV
+        // =============================================
         function convertirEnCSVExcel() {
-            if (!pointsAdherents.length) { alert("Aucune donnée"); return; }
-            var csv = "ID;Nom;Ville;Adresse;Adhérents;Latitude;Longitude;Description\r\n";
-            pointsAdherents.forEach(p => {
-                csv += `${p.id};${p.nom || ""};${p.ville || ""};${p.adresse || ""};${p.adherents || 0};${p.lat || ""};${p.lng || ""};${(p.description || "").replace(/;/g, ',')}\r\n`;
+            if (!pointsAdherents.length) { alert("Aucune donnée à exporter"); return; }
+            
+            var entetes = ['ID', 'Nom', 'Ville', 'Adresse', 'Adhérents', 'Latitude', 'Longitude', 'Description'];
+            var lignes = pointsAdherents.map(point => [point.id || '', point.nom || '', point.ville || '', point.adresse || '', point.adherents || 0, String(point.lat || '').replace('.', ','), String(point.lng || '').replace('.', ','), (point.description || '').replace(/"/g, '""').replace(/\n/g, ' ')]);
+            
+            var csv = entetes.join(';') + '\r\n';
+            lignes.forEach(ligne => {
+                var ligneFormatee = ligne.map(cellule => { var str = String(cellule); if (str.includes(';') || str.includes('"') || str.includes('\n') || str.includes('\r')) return '"' + str.replace(/"/g, '""') + '"'; return str; });
+                csv += ligneFormatee.join(';') + '\r\n';
             });
-            var blob = new Blob(["\uFEFF" + csv], {type: 'text/csv;charset=utf-8;'});
+            
+            var blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
             var url = URL.createObjectURL(blob);
             var a = document.createElement('a');
             a.href = url;
-            a.download = 'adherents-cfdt-' + new Date().toISOString().slice(0,10) + '.csv';
+            a.download = 'adherents Correze-cfdt-' + new Date().toISOString().slice(0,10) + '.csv';
             a.click();
-            URL.revokeObjectURL(url);
+            setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 100);
+            alert("CSV généré avec " + pointsAdherents.length + " entrées");
+        }
+        
+        function debugExportCSV() {
+            console.log("=== DEBUG EXPORT CSV ===");
+            console.log("Points en mémoire:", pointsAdherents.length);
+            console.log("3 premiers points:", pointsAdherents.slice(0, 3));
+            alert("=== DEBUG CSV ===\nPoints en mémoire: " + pointsAdherents.length + "\nVoir console (F12) pour détails");
         }
         
         // =============================================
         // INITIALISATION
         // =============================================
-        chargerDonnees();
-        window.addEventListener('load', initialiserCarte);
+        // Attendre que le DOM soit chargé
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                chargerDonnees();
+                initialiserCarte();
+            });
+        } else {
+            chargerDonnees();
+            initialiserCarte();
+        }
     </script>
 </body>
 </html>
