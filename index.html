@@ -545,24 +545,87 @@ var seniorsCorreze = 88116; // 60 ans et plus
         // =============================================
         // 1. INITIALISATION DE LA CARTE
         // =============================================
+
+ var adherents = [
+ var adherents = [
+  {id: 1, nom: "ALBUSSAC", ville: "ALBUSSAC", adherents: 3, lat: 45.1395791, lng: 1.8356481, description: ""},
+  {id: 2, nom: "ALLASSAC", ville: "ALLASSAC", adherents: 1, lat: 45.2593, lng: 1.4757, description: ""},
+  {id: 3, nom: "ARGENTAT S", ville: "ARGENTAT SUR DORDOGN", adherents: 3, lat: 45.1165803, lng: 1.9404253, description: ""},
+  {id: 4, nom: "ARNAC POM", ville: "ARNAC POMPADOUR", adherents: 1, lat: 45.399475, lng: 1.3733, description: ""},
+  {id: 5, nom: "BEAULIEU SU", ville: "BEAULIEU SUR DORDOGN", adherents: 1, lat: 44.9782193, lng: 1.8377313, description: ""},
+  {id: 6, nom: "BRIVE LA GA", ville: "BRIVE LA GAILLARDE", adherents: 16, lat: 45.1584982, lng: 1.5332389, description: ""},
+  {id: 7, nom: "BEYNAT", ville: "BEYNAT", adherents: 1, lat: 45.148912, lng: 1.7218235, description: ""},
+  {id: 8, nom: "CARS", ville: "CARS", adherents: 1, lat: 45.215731, lng: 1.59956, description: ""},
+  {id: 9, nom: "CHAMBOULIVE", ville: "CHAMBOULIVE", adherents: 1, lat: 45.42307, lng: 1.67435, description: ""},
+  {id: 10, nom: "CHAMEYRAT", ville: "CHAMEYRAT", adherents: 1, lat: 45.2335546, lng: 1.6974158, description: ""},
+  {id: 11, nom: "CHAMPAGNAC", ville: "CHAMPAGNAC LA NOAILL", adherents: 1, lat: 45.3073963, lng: 2.0168176, description: ""},
+  {id: 12, nom: "COSNAC", ville: "COSNAC", adherents: 3, lat: 45.1331, lng: 1.58763, description: ""},
+  {id: 13, nom: "CRESSENSAC", ville: "CRESSENSAC SARRAZAC", adherents: 1, lat: 45.202577, lng: 1.519831, description: ""},
+  {id: 14, nom: "CUBLAC", ville: "CUBLAC", adherents: 1, lat: 45.1442316, lng: 1.3056983, description: ""},
+  {id: 15, nom: "EGLETONS", ville: "EGLETONS", adherents: 3, lat: 45.4065523, lng: 2.042, description: ""},
+  {id: 16, nom: "HAUTEFAGE", ville: "HAUTEFAGE", adherents: 1, lat: 45.0816106, lng: 2.001341, description: ""},
+  {id: 17, nom: "JUGEALS NAZ", ville: "JUGEALS NAZARETH", adherents: 1, lat: 45.0812305, lng: 1.5585602, description: ""},
+  {id: 18, nom: "JUILLAC", ville: "JUILLAC", adherents: 0, lat: 45.317344, lng: 1.321478, description: ""},
+  {id: 19, nom: "LA FEUILLAD", ville: "LA FEUILLAD", adherents: 1, lat: 45.114568, lng: 1.4002557, description: ""},
+  {id: 20, nom: "LA ROCHE CA", ville: "LA ROCHE CANILLAC", adherents: 1, lat: 45.1956234, lng: 1.9693752, description: ""},
+  {id: 21, nom: "LAGARDE MA", ville: "LAGARDE MARC LA TOUR", adherents: 1, lat: 45.1908046, lng: 1.830412, description: ""},
+  {id: 22, nom: "LAGLEYGEOL", ville: "LAGLEYGEOLLE", adherents: 1, lat: 45.083337, lng: 1.694272, description: ""},
+  {id: 23, nom: "LAGUENNE S", ville: "LAGUENNE SUR AVALOUZ", adherents: 1, lat: 45.2475656, lng: 1.790103, description: ""},
+  {id: 24, nom: "LE CHASTANG", ville: "LE CHASTANG", adherents: 1, lat: 45.1723838, lng: 1.724495, description: ""},
+  {id: 25, nom: "LES TROIS SA", ville: "LES TROIS SAINTS", adherents: 1, lat: 45.440435, lng: 1.522122, description: ""},
+  {id: 26, nom: "LIGNIAC", ville: "LIGNIAC", adherents: 1, lat: 45.4144112, lng: 2.333005, description: ""},
+  {id: 27, nom: "LIMOGES", ville: "LIMOGES", adherents: 1, lat: 45.8344241, lng: 1.264847, description: ""},
+  {id: 28, nom: "LUBERSAC", ville: "LUBERSAC", adherents: 1, lat: 45.4456945, lng: 1.4040072, description: ""},
+  {id: 29, nom: "MALEMORT", ville: "MALEMORT", adherents: 4, lat: 45.179675, lng: 1.533, description: ""},
+  {id: 30, nom: "MANSAC", ville: "MANSAC", adherents: 1, lat: 45.1682435, lng: 1.3826406, description: ""}
+	   {id: 31, nom: "NADAILLAC", ville: "NADAILLAC", adherents: 1, lat: 45.03872, lng: 1.39725, description: ""},
+  {id: 32, nom: "NAVES", ville: "NAVES", adherents: 1, lat: 45.312139, lng: 1.7664774, description: ""},
+  {id: 33, nom: "NOAILLES", ville: "NOAILLES", adherents: 1, lat: 45.1014092, lng: 1.5236825, description: ""},
+  {id: 34, nom: "OBJAT", ville: "OBJAT", adherents: 1, lat: 45.2628546, lng: 1.4097899, description: ""},
+  {id: 35, nom: "PANDRIGNES", ville: "PANDRIGNES", adherents: 2, lat: 45.2281323, lng: 1.8547415, description: ""},
+  {id: 36, nom: "PARIS", ville: "PARIS", adherents: 1, lat: 48.859018, lng: 2.347032, description: ""},
+  {id: 37, nom: "SADROC", ville: "SADROC", adherents: 1, lat: 45.2828668, lng: 1.5492086, description: ""},
+  {id: 38, nom: "SALON LA TOUR", ville: "SALON LA TOUR", adherents: 1, lat: 45.5044021, lng: 1.5389774, description: ""},
+  {id: 39, nom: "SARRAN", ville: "SARRAN", adherents: 1, lat: 45.4097306, lng: 1.9382743, description: ""},
+  {id: 40, nom: "SEGONZAC", ville: "SEGONZAC", adherents: 1, lat: 45.278494, lng: 1.267858, description: ""},
+  {id: 41, nom: "SEILHAC", ville: "SEILHAC", adherents: 1, lat: 45.3663548, lng: 1.7144158, description: ""},
+  {id: 42, nom: "ST CLEMENT", ville: "ST CLEMENT", adherents: 1, lat: 45.339547, lng: 1.682669, description: ""},
+  {id: 43, nom: "ST GEORGES", ville: "ST GEORGES", adherents: 1, lat: 45.9731105, lng: 0.2708349, description: ""},
+  {id: 44, nom: "ST HILAIRE PI", ville: "ST HILAIRE PEYROUX", adherents: 1, lat: 45.2135945, lng: 1.6485671, description: ""},
+  {id: 45, nom: "ST MARTIAL", ville: "ST MARTIAL DE GIMEL", adherents: 1, lat: 45.2665204, lng: 1.8718724, description: ""},
+  {id: 46, nom: "ST MAURICE", ville: "ST MAURICE LES BROUSSE", adherents: 1, lat: 45.6985284, lng: 1.2361207, description: ""},
+  {id: 47, nom: "ST PANTALEO", ville: "ST PANTALEON DE LARCHI", adherents: 3, lat: 45.1406943, lng: 1.446519, description: ""},
+  {id: 48, nom: "ST PARDOUX", ville: "ST PARDOUX CORBIER", adherents: 1, lat: 45.449526, lng: 1.457923, description: ""},
+  {id: 49, nom: "ST SOLVE", ville: "ST SOLVE", adherents: 1, lat: 45.3097839, lng: 1.4003585, description: ""},
+  {id: 50, nom: "ST SYLVAIN", ville: "ST SYLVAIN", adherents: 1, lat: 45.1758539, lng: 1.875582, description: ""},
+  {id: 51, nom: "ST VIANCE", ville: "ST VIANCE", adherents: 1, lat: 45.2176112, lng: 1.4521769, description: ""},
+  {id: 52, nom: "STE FEREOLE", ville: "STE FEREOLE", adherents: 1, lat: 45.2538138, lng: 1.5854783, description: ""},
+  {id: 53, nom: "STE FORTUN", ville: "STE FORTUNADE", adherents: 1, lat: 45.2072935, lng: 1.7719357, description: ""},
+  {id: 54, nom: "TULLE", ville: "TULLE", adherents: 1, lat: 45.2678347, lng: 1.7706797, description: ""},
+  {id: 55, nom: "USSAC", ville: "USSAC", adherents: 1, lat: 45.207312, lng: 1.747067, description: ""},
+  {id: 56, nom: "UZERCH", ville: "UZERCH", adherents: 1, lat: 45.4243023, lng: 1.5636393, description: ""},
+  {id: 57, nom: "VARETZ", ville: "VARETZ", adherents: 1, lat: 45.147469, lng: 1.447493, description: ""},
+  {id: 58, nom: "VIGNOLS", ville: "VIGNOLS", adherents: 1, lat: 45.3193629, lng: 1.3892897, description: ""}
+
+];
+
+  // ... tu peux continuer avec les lignes suivantes si tu veux tout intégrer
+];
+
+
+
+		
         function initialiserCarte() {
             carte = L.map('carte-correze').setView(centreCorreze, zoomDepartementCorreze);
             changerCarte('chaud');
 // Charger la liste des adhérents depuis GitHub
-fetch("https://raw.githubusercontent.com/norbert19520/carte-adherents/refs/heads/main/index.html")
+adherents.forEach(a => {
+    if (a.lat && a.lng) {
+        L.marker([a.lat, a.lng]).addTo(carte)
+            .bindPopup(`<b>${a.nom}</b><br>${a.ville}`);
+    }
+});
 
-    .then(response => response.json())
-    .then(adherents => {
-        console.log("Adhérents chargés :", adherents);
-
-        adherents.forEach(a => {
-            if (a.lat && a.lng) {
-                L.marker([a.lat, a.lng]).addTo(carte)
-                    .bindPopup(`<b>${a.nom}</b><br>${a.ville}`);
-            }
-        });
-    })
-    .catch(error => console.error("Erreur JSON :", error));
 
 
 
