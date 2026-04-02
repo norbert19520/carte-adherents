@@ -619,12 +619,14 @@ var seniorsCorreze = 88116; // 60 ans et plus
             carte = L.map('carte-correze').setView(centreCorreze, zoomDepartementCorreze);
             changerCarte('chaud');
 // Charger la liste des adhérents depuis GitHub
-adherents.forEach(a => {
-    if (a.lat && a.lng) {
-        L.marker([a.lat, a.lng]).addTo(carte)
-            .bindPopup(`<b>${a.nom}</b><br>${a.ville}`);
-    }
-});
+// ✅ IMPORTANT : charger les données AVANT affichage
+			
+pointsAdherents = adherents;
+ // ✅ Utilise TON moteur (libellés + logo CFDT)
+			
+ajouterPointsSurCarte();
+			
+
 
 
 
